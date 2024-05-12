@@ -18,7 +18,7 @@ main {
 }
 
 .image-container {
-    background-image: url('../images/reservation-banner.svg');
+    background-image: url('images/reservation-banner.svg');
     background-size: cover; 
     background-position: center; 
     position: absolute;
