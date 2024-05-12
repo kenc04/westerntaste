@@ -1,7 +1,6 @@
 const slidesBox = document.querySelector(".slideImages");
 const slides = document.querySelectorAll(".slideImages .slide");
 let slideIndex = 0;
-let startX = 0;
 
 displaySlide(slideIndex);
 let interval = null;
@@ -44,27 +43,4 @@ function readUser() {
     else {
         return;
     }
-}
-
-if ('ontouchstart' in slidesBox || navigator.maxTouchPoints) {
-    document.addEventListener('touchstart', e => {
-        startX = e.touches[0].clientX;
-    });
-
-    document.addEventListener('touchmove', e => {
-        const currentX = e.touches[0].clientX;
-        const diffX = startX - currentX;
-
-        if (Math.abs(diffX) > 300) {
-            prevSlide(); 
-        } else {
-
-            nextSlide(); 
-        }
-        startX = currentX;
-    });
-
-    document.addEventListener('touchend', e => {
-        // Additional logic if needed
-    });
 }
