@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+main {
+    max-width: 1200px;
+    padding: 2px 40px;
+    margin: 0 auto;
+}
+
+/* ===============================
+      Empty Cart Display Styles 
+   ===============================*/
+#cart-empty {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+#cart-empty h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 3em;
+    transform: translateY(-40%);
+    transform: translateX(-50%);
+}
+
+#cart-empty #continueBtn {
+    text-wrap: nowrap;
+    font-weight: bold;
+    position: absolute;
+    font-weight: normal;
+    color:rgb(255, 255, 255);
+    top: 60%;
+    left: 50%;
+    padding: 10px 50px;
+    transform: translateY(-60%);
+    transform: translateX(-50%);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#cart-empty #continueBtn:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+#cart-container {
+    display: flex;
+    flex-flow: row wrap;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    line-height: 25px;
+    margin: 40px auto;
+}
+
+/* =====================================
+    Delivery and Payment Display Styles 
+   =====================================*/
+#delivery-section {
+    text-align: start;
+    width: 50%;
+    padding: 20px;
+}
+
+#delivery-section h2 {
+    margin: 15px 0;
+}
+
+.delivery-row {
+    margin: 10px 0;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], select {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.radio-box {
+    position: relative;
+    align-content: center;
+    height: 45px;
+    padding-left: 10px; 
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.pay-method div img {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    height: 50%;
+    transform: translateY(-50%);
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.pay-method div img#visa-icon {
+    right: 60px;
+}
+
+#qr-code {
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgb(218, 218, 218);
+}
+
+#qr-code img {
+    width: 100%;
+}
+
+#pickup-box, #banking-box, #same-bill-box {
+    border-radius: 5px 5px 0 0;
+}
+
+#ship-box, #tng-box, #diff-bill-box {
+    border-radius: 0 0 5px 5px;
+}
+
+#pickup-location {
+    line-height: normal;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.name-row, .address-code-row {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 2%;
+}
+
+.name-row input[type="text"] {
+    width: 49%;
+}
+
+.address-code-row input[type="text"] {
+    width: 32%;
+}
+
+/* ===============================
+         Cart Display Styles 
+   ===============================*/
+#cart-section {
+    font-weight: bold;
+    width: 50%;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.cart-product {
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+.cart-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 14px 0 10px 0;
+}
+
+.cart-row .cart-image {
+    width: 180px;
+}
+
+.cart-row .cart-image > img {
+    width: 100%
+}
+
+
+.cart-row .cart-details {
+    text-align: left;
+    padding: 0 10px;
+    width: 60%;
+}
+
+.cart-row .cart-details .qty-control {
+    display: flex;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    width: 80px;
+}
+
+.qty-control span {
+    text-align: center;
+    width: 100%;
+}
+
+.qty-control span.minus, .qty-control span.plus {
+    cursor: pointer;
+}
+
+.remove-btn {
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    font-size: 15px;
+}
+
+.item-price {
+    width: 20%;
+    text-align: end;
+    text-wrap: nowrap;
+}
+
+.cart-total {
+    padding: 5px 0;
+}
+
+#payBtn {
+    margin: 0 auto;
+    padding: 10px 50px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#payBtn:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+/* ===============================
+   Mobile Styles: 0px to 700px 
+   ===============================
+*/
+@media only screen and (max-width: 700px) {
+    main {
+        padding: 0;
+    }
+
+    #cart-container {
+        padding: 20px;
+        margin: 0;
+    }
+
+    #delivery-section, #cart-section {
+        width: 100%;
+    }
+
+    footer {
+        display: none;
+    }
+}

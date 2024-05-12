@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+main {
+    max-width: 1000px;
+    padding: 20px 40px;
+    margin: 0 auto 100px auto;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 110%;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 10px 10px 0 0;
+}
+
+.sidebar > ul > li {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.sidebar > ul > li > a {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.sidebar > ul > li.active {
+    background-color: rgb(230, 230, 230);
+}
+
+.sidebar > ul > li:hover {
+    background-color:rgb(198, 198, 198);
+}
+
+.sidebar > ul > li:hover a {
+    transition: all 0.5s ease-in-out;
+    font-size: 18px;
+}
+
+#entree-container, #beverage-container, #dessert-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    background-color:rgba(210, 210, 210, 0.5);  
+    width: 100%;
+    padding: 20px;
+    grid-gap: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+#entree-container > div.all, 
+#beverage-container > div.all, 
+#dessert-container > div.all {
+    display: flex;
+    flex-flow: column nowrap;
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    width: 260px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#entree-container > div.all > img, 
+#beverage-container > div.all > img,
+#dessert-container > div.all > img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+#entree-container > div.all > img {
+    height: 190px;
+}
+
+#beverage-container > div.all > img {
+    height: 260px;
+}
+
+#entree-container > div.all > img:hover, 
+#beverage-container > div.all > img:hover,
+#dessert-container > div.all > img:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+
+#entree-container > div.all > h2, 
+#beverage-container > div.all > h2,
+#dessert-container > div.all > h2 {
+    text-wrap: wrap;
+    font-weight: bold;
+    padding: 5px;
+    height: 50px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#entree-container > div.all > p, 
+#beverage-container > div.all > p,
+#dessert-container > div.all > p {
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+
+#entree-container > div.all > button, 
+#beverage-container > div.all > button,
+#dessert-container > div.all > button {
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin: 20px auto; 
+    padding: 10px 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+#entree-container > div.all > button:hover, 
+#beverage-container > div.all > button:hover,
+#dessert-container > div.all > button:hover {
+    background-color: rgb(180, 180, 180);
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 760px) {
+    .sidebar ul {
+        flex-flow: column nowrap;
+    }
+}
+
+/* ===============================
+   Mobile Styles: 0px to 480px 
+   ===============================
+*/
+@media only screen and (max-width: 480px) {
+    .sidebar ul {
+        flex-flow: column nowrap;
+    }
+}
+

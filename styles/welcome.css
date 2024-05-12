@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: Champagne;
+	src: url(../font/cac_champagne.woff) format('woff'),
+	     url(../font/cac_champagne.ttf) format('ttf');
+}
+
+body {
+    background-image: url(../images/login-background.svg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.details-container {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 70vw;
+    height: 80vh;
+    border-radius: 15px;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.details-company-logo {
+    width: 30%;
+}
+
+.details-company-logo img {
+    width: 100%;
+}
+
+#details-form {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+h1 {
+    line-height: normal;
+    font-weight: normal;
+    font-family: Champagne, cursive;
+    margin: 20px 0;
+    font-size: 3em;
+    letter-spacing: 5px;
+}
+
+.details-field {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    background-color: rgb(231, 231, 231);
+    width: 100%;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 50px;
+}
+
+.details-field img {
+    width: 10%;
+    margin: 5px;
+}
+
+.details-field input {
+    outline: none;
+    font-weight: bold;
+    width: 80%;
+    height: 50px;
+}
+
+.submitBtn {    
+    cursor: pointer;
+    margin: 15px auto;
+    padding: 10px 50px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.submitBtn:hover {
+    transform: scale(1.05);
+    transition: all .3s;
+    background-color: rgb(180, 180, 180);
+}
+
+/* ========================================
+    Desktop or Tablet Styles: 0px to 900px   
+   ========================================
+*/
+@media only screen and (max-width: 900px) {
+    .details-container {
+        width: 80vw;
+    }
+}
+
+/* ===============================
+   Mobile Styles: 0px to 700px 
+   ===============================
+*/
+@media only screen and (max-width: 780px) {
+    .details-container {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form-container {
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .details-company-logo {
+        width: 50%;
+    }
+    
+    #details-form {
+        height: max-content;
+        justify-content: start;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* ===============================
+   Mobile Styles: 0px to 340px 
+   ===============================
+*/
+@media only screen and (max-width: 320px) {
+    form {
+        width: 90%;
+    }
+}

@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+main {
+    max-width: 1000px;
+    padding: 20px 40px;
+    margin: 100px auto;
+}
+
+h1 {
+    margin: 300px 0; 
+}
+
+#account-container {
+    display: flex;
+    flex-flow: row wrap;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    line-height: 25px;
+    margin: 40px auto;
+}
+
+#account-nav {
+    text-align: start;
+    width: 30%;
+    padding: 20px;
+}
+
+#account-nav ul li {
+    cursor: pointer;
+    align-content: center;
+    height: 50px;
+    margin: 10px 0;
+    padding-left: 5px;
+}
+
+#account-nav ul li:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+#account-content {
+    width: 70%;
+    padding: 20px;
+}
+
+.contents {
+    display: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;    
+}
+
+.contents.display {
+    display: block;
+}
+
+.contents h1 {
+    margin: 10px 0 40px 0;
+    line-height: 1;
+}
+
+.account-row {
+    margin: 20px 0;
+}
+
+.name-row {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 2%;
+}
+
+.name-row input[type="text"] {
+    width: 49%;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    border: 1px solid rgb(218, 218, 218);
+}
+
+button[type="submit"] {
+    margin: 0 auto;
+    padding: 10px 50px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#saveBtn:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+input[type="checkbox"], input[type="radio"] {
+    cursor: pointer;
+    transform: scale(1.8);
+    margin: 10px; 
+}
+
+fieldset {
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.delete-section {
+    margin: 40px 0;
+}
+
+#deleteBtn {
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0); 
+    padding: 10px 40px;
+}
+
+@media only screen and (max-width: 740px) {
+    #account-container {
+        flex-flow: column;
+    }
+
+    #account-content {
+        margin-top: 6px;
+        border-top: 1px solid rgb(211, 211, 211);
+    }
+
+    #account-nav {
+        width: 100%;
+        padding: 0;
+    }
+
+    #account-nav ul {
+        text-align: center;
+        width: 100%;
+    }
+
+    #account-nav ul li {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #account-content {
+        width: 100%;
+    }
+
+    .name-row {
+        flex-direction: column;
+    }
+
+    .name-row input[type="text"] {
+        width: 100%;
+        margin: 8px 0;
+    }
+}

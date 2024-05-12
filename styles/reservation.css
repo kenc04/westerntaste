@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+main {
+    max-width: 1200px;
+    padding: 2px 40px;
+    margin: 0 auto 100px auto;
+}
+
+.remove-scrolling {
+    overflow: hidden;
+}
+
+.reservation-banner {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 680px;
+}
+
+.image-container {
+    background-image: url('/images/reservation-banner.svg');
+    background-size: cover; 
+    background-position: center; 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 680px; 
+    animation: slideImage 5s forwards; 
+}
+
+.banner-text {
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    font-size: 150%;
+    color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    
+    animation: fadeIntext 5s ease-in forwards;
+}
+
+.header {
+    display: flex; 
+    flex-flow: row wrap;
+    align-items: center; 
+    justify-content: space-evenly; 
+    margin: 60px auto;
+
+    animation: fadeIntext 5s ease-in forwards;
+}
+
+.header-button {
+    text-wrap: nowrap;
+    padding: 15px 30px; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+    animation: fadeIntest 5s ease-in forwards;
+    animation: buttonSize 2s infinite;
+}
+
+@keyframes buttonSize {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}
+
+.header-button:hover {
+    transition: all .3s;
+    transform: scale(1.05);
+    color: rgb(255, 255, 255);
+    background-color: rgb(123, 123, 123);
+}
+
+.header h1{
+    animation: fadeIntext 5s ease-in forwards;
+}
+
+.popup {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.popup-content {
+    width: 800px;
+    height: 550px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#reservation-form {
+    text-align: start;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+h1, h2 {
+    text-align: center; 
+}
+
+input { 
+    padding: 5px; 
+    width: 60%;
+    font-size: 16px;
+    border-radius: 3px; 
+    margin-bottom: 10px; 
+    border: 1px solid black; 
+}
+
+label {
+    font-weight: bold;
+    text-wrap: nowrap; 
+    width: 40%;
+}
+
+.input-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-row div {
+    display: flex;
+    justify-content: space-between;
+    width: 49%;
+}
+
+.red {
+    color: red; 
+}
+
+.button-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-row {
+    display: flex; 
+}
+
+.button-row input,
+.button-row button {
+    width: 20%;
+    margin: 10px;
+    border-radius: 0px; 
+    padding: 10px 20px; 
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.button-row input:hover,
+.button-row button:hover {
+    background-color: rgb(200, 200, 200); 
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+.reservation-container {
+    display: flex; 
+    flex-flow: row wrap;
+    padding: 20px; 
+    animation: fadeIntext 5s ease-in forwards;
+}
+
+.left-side {
+    width: 50%; 
+}
+
+.left-side img {
+    width: 100%;
+}
+
+.right-side {
+    width: 50%; 
+    padding: 20px; 
+}
+
+.right-side h2 {
+    font-size: 2.5em; 
+    margin-bottom: 10px; 
+    line-height: 1;
+}
+
+.right-side h3 {
+    text-align: center;
+    font-size: 25px; 
+    margin-top: 10px; 
+}
+
+.right-side ul {
+    padding-left: 20px; 
+    margin-bottom: 20px; 
+}
+
+.right-side li {
+    text-align: justify;
+    font-size: 20px; 
+    line-height: 1.6; 
+    margin: 15px 0; 
+}
+
+@keyframes slideImage {
+    from { left: -100%;}
+    to { left: 0;}
+}
+
+@keyframes fadeIntext {
+    from { opacity: 0;}
+    to { opacity: 1;}
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .header {
+        flex-direction: column-reverse;
+        margin-bottom: 0;;
+    }
+
+    .banner-text {
+        font-size: 120%;
+    }
+
+    .popup-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .input-row div {
+        width: 100%;
+    }
+    
+    .button-row input,
+    .button-row button {
+        width: 40%;
+    }
+
+    .left-side {
+        display: none;
+    }
+    
+    .right-side {
+        width: 100%; 
+        font-size: 16px; 
+    }
+}
+

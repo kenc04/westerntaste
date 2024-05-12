@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+body {
+    background-image: url(../images/giftcard-bg.svg);
+    background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    max-width: 1000px;
+    padding: 20px 40px;
+    margin: 0 auto 100px auto;
+}
+
+/* Form */
+#gift-card-form {
+    max-width: 550px;
+    margin: 30px auto;
+}
+
+/* image slider box */
+.box-slider {
+    overflow: hidden;
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.slider {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slider .slide {
+    width: 25%;
+    transition: all 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider input {
+    display: none;
+}
+
+/* bar button */
+.nav-swipe {
+    display: flex;
+    position: absolute;
+    width: 75%;
+    bottom: 0px;
+    /* make the bar always in the middle of its width*/
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.nav-swipe .bar {
+    margin: 6px;
+    height: 10px;
+    transition: 0.4s;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.bar:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+#radio1:checked~.s1 {
+    margin-left: 0;
+}
+
+#radio2:checked~.s1 {
+    margin-left: -25%;
+}
+
+#radio3:checked~.s1 {
+    margin-left: -50%;
+}
+
+#radio4:checked~.s1 {
+    margin-left: -75%;
+}
+
+#gift-card-form h2 {
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
+}
+
+.gift-card-row {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 55px;
+    padding: 0 15px;
+    border-radius: 10px;
+    margin: 0 auto 20px auto;
+}
+
+#gift-card-form label {
+    text-align: start;
+    color: rgb(85, 85, 85);
+    width: 100px;
+    font-size: 18px;
+}
+
+select, input[type="text"] {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.gift-card-row .dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.gift-card-row .dropdown::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 5px;
+    width: 5px;
+    z-index: 10;
+    height: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    border-top: none;
+    border-right: none;
+    transition: 0.2s;
+    transform: rotate(-45deg);
+}
+
+.gift-card-row .dropdown.active::before {
+    top: 20px;
+    transform: rotate(-225deg);
+}
+
+/*input field of .dropdown input only*/
+
+.gift-card-row .dropdown .option {
+    display: none;
+    overflow-y: scroll;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    top: 45px;
+    left: 10px;
+    z-index: 10;
+    width: 100%;
+    font-size: 1.1em;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+/*Display the option when .active added*/
+
+.gift-card-row .dropdown.active .option {
+    display: block;
+}
+
+.gift-card-row .dropdown .option div {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+.gift-card-row .dropdown .option div:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(188, 188, 188);
+}
+
+.gift-card-row .dropdown img {
+    position: relative;
+    width: 50%;
+}
+
+/* Button */
+
+#gift-card-add {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding: 15px 40px;
+    transition: all .5s;
+}
+
+#gift-card-add:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(180, 180, 180);
+    transform: scale(1.1);
+}

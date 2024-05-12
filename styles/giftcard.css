@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+main {
+    max-width: 1100px;
+    padding: 20px 40px;
+    margin: 0 auto 100px auto;
+}
+
+.gift-card-box {
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.gift-card-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.gift-card-box #gift-cover2 {
+    display: none;
+}
+
+.gift-card-box #startBtn {
+    position: absolute;
+    bottom: 2%;
+    right: -100%;
+    transition: all 1s;
+}
+
+#startBtn a button {
+    font-weight: bold;
+    color: rgb(255, 215, 0);
+    background: linear-gradient(to bottom, rgb(121, 121, 121), rgb(62, 62, 62));
+    padding: 13px 40px;
+    transition: all .5s;
+    border: 2px solid rgb(255, 215, 0);
+}
+
+#startBtn a button:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(73, 73, 73);
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 800px) {
+    .gift-card-box #startBtn {
+        left: 3%;
+        font-size: 70%;
+    }
+    
+    #startBtn a button {
+        padding: 5px 25px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .gift-card-box #gift-cover1 {
+        display: none;
+    }
+
+    .gift-card-box #gift-cover2 {
+        display: block;
+    }
+
+    .gift-card-box .btn {
+        font-size: 60%;
+    }
+}

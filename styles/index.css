@@ -1,0 +1,411 @@
+@charset "utf-8";
+
+main {
+    margin: 0 auto 40px auto;
+}
+
+/* =============================
+    Home Page Slide Show Styles
+   =============================
+*/
+#slideshow {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slideImages {
+    display: flex;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.small-banner {
+    display: none;
+}
+
+.slide-content {
+    text-wrap: nowrap;
+    position: absolute;
+    width: max-content;
+    top: 30%;
+    transform: translateY(-30%);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    padding: 10px 50px;
+}
+
+.slide-content h1 {
+    font-size: 2.5em;
+}
+
+.slide-content p {
+    font-size: 25px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content-button {
+    text-wrap: nowrap;
+    width: max-content;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px 45px;
+}
+
+.slide-button {
+    text-wrap: nowrap;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 45%;
+    transform: translateY(-45%);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    font-size: 18px;
+    padding: 10px 5px;
+    border: 2px solid rgb(255, 255, 255);
+}
+  
+.content-button:hover, .slide-button:hover {
+    background-color: rgb(160, 160, 160);
+}
+
+#prevBtn, #nextBtn {
+    border: none;
+    cursor: pointer;
+    background: none;
+    position: absolute;
+    width: fit-content;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 10%;
+    opacity: 0.3;
+    transition: all .3s;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+#slideshow button img {
+    height: 100%;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    opacity: 1;
+}
+
+/* ==========================
+    Home Page Content Styles
+   ==========================
+*/
+.content-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container div {
+    width: 35%;
+    margin: 0 30px;
+}
+
+.content-container .content-text {
+    padding: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.content-container .content-text h1 {
+    margin-top: 10px;
+    line-height: 0.7;
+}
+
+.content-container .content-text p {
+    text-align: justify;
+}
+
+.content-container .content-text .section-button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 40px;
+    transition: all 0.4s ease-in-out;
+}
+
+.content-container .content-text .section-button:hover {
+    background-color: rgb(129, 129, 129);
+    transform: scale(1.1);
+}
+
+.content-container .content-image img {
+    width: 100%;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+/* about us section */
+#about-section {
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 60px 0;
+}
+
+/* Event Section */
+#event-section {
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+#event-section .content-container .content-text .section-button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+#event-section .content-container .content-text .section-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(129, 129, 129);
+    transform: scale(1.1);
+}
+
+/* Chef Recommends Section */
+#recommend-section {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 40px 0;
+}
+
+#recommend-section h1 {
+    margin-bottom: 15px;
+}
+
+#recommend-section img {
+    width: 20%;
+}
+
+#recommend {        
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 25px 20px;
+}
+
+#recommend .recommend-card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 350px;
+    margin: 10px 20px;
+    transition: all .5s ease-in-out;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+#rcard1 {
+    background-image: url("../images/menu-images/burger1.svg");
+}
+
+#rcard2 {
+    background-image: url("../images/menu-images/c2.svg");
+}
+
+#rcard3 {
+    background-image: url("../images/menu-images/dessert2.svg");
+}
+
+#recommend .recommend-card h2 {
+    align-content: end;
+    background-color: rgba(0, 0, 0, 0.348);
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    font-size: 3em;
+    padding-bottom: 25px;
+}
+
+#recommend .recommend-card:hover {
+    transform: scale(1.05);
+}
+
+/* reservation section */
+#reservation-section {
+    background-image: url("../images/reservation-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+#reservation-section .content-container .content-text .section-button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+#reservation-section .content-container .content-text .section-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(129, 129, 129);
+    transform: scale(1.1);
+}
+
+/* review section */
+#reviews-section {
+    padding: 40px 0;
+}
+
+#reviews {        
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#reviews .review-card {
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(12, 12, 12);
+    width: 300px;
+    height: 350px;
+    padding: 0 10px;
+    margin: 10px 20px;
+    border: 2px solid rgb(255, 226, 158);
+}
+
+.review-card .quote-icon {
+    height: 20%;
+}
+
+.review-card .quote-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.review-card p {
+    height: 50%;
+    font-size: 1.05em;
+}
+
+.review-card cite {
+    height: 10%;
+}
+
+.review-card .star-icon {
+    height: 10%; 
+}
+
+.review-card .star-icon img {
+    width: 50%;
+    height: 100%;
+} 
+
+@media only screen and (max-width: 1000px) {
+    .slide-button {
+        padding: 10px 20px;
+    }
+
+    .slide-content {
+        position: absolute;
+        top: 30%;
+        transform: translateY(-30%);
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        padding: 0;
+    }
+    
+    .slide-content h1 {
+        font-size: 2em;
+        margin-bottom: 8px;
+    }
+
+    .slide-content p {
+        font-size: 20px; 
+    }
+    
+    .content-button {
+        font-size: 15px;
+    }
+    
+    .slide-button {
+        font-size: 16px;
+        text-wrap: nowrap;
+    }
+
+    #about-section .content-container {
+        flex-direction: column-reverse;
+    }
+
+    .content-container div {
+        width: 60%;
+    }
+
+    #recommend-section img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 880px) {    
+    .content-container .content-image {
+        padding: 10px;
+        transition: all .7s;
+    }
+}
+
+/* ============================
+   Mobile Styles: 0px to 640px
+   ============================
+*/
+@media only screen and (max-width: 640px) {    
+    .slide {
+        height: 400px;
+    }
+
+    .slide img {
+        width: 100%;
+    }
+
+    .big-banner {
+        display: none;
+    }
+
+    .small-banner {
+        display: block;
+    }
+
+    .content-container div {
+        width: 75%;
+    }
+    
+    .content-container .content-image {
+        padding: 0;
+        transition: all .7s;
+    }
+
+    .content-container .content-text {
+        margin: 0;
+        font-size: 16px;
+        transition: all .7s;
+        padding: 20px 0 0 0;   
+    }
+}

@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+main {
+    max-width: 1000px;
+    padding: 20px 40px;
+    margin: 0 auto 100px auto;
+}
+
+#hiring-form {
+    border: none;
+    text-align: start;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 700px;
+    border-radius: 25px;
+}
+
+h1, h2 {
+    text-align: center; 
+}
+
+label {
+    font-weight: bold;
+    text-wrap: nowrap; 
+    width: 110px;
+}
+
+.red {
+    color: rgb(255, 0, 0); 
+}
+
+input { 
+    padding: 5px; 
+    font-size: 16px;
+    border-radius: 3px; 
+    margin-bottom: 10px; 
+    border: 1px solid rgb(0, 0, 0); 
+}
+
+.input-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-row div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-row div label {
+    text-wrap: wrap; 
+}
+
+.input-col {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.input-col input {
+    width: 100%; 
+}
+
+.last-col input {
+    width: 40%;
+}
+
+#applyBtn {
+    padding: 10px 50px;
+    margin: 10px auto 0 auto;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#applyBtn:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+@media (max-width: 880px) {
+    #hiring-form {
+        max-width: 90%;
+    }
+
+    .input-row div {
+        width: 100%;
+        justify-content: start;
+    }
+    
+    .input-row div label {
+        text-wrap: nowrap; 
+        width: 180px;
+    }
+
+    .input-row div input {
+        width:  80%;
+    }
+}
+
+@media (max-width: 640px) {
+    .input-row div {
+        flex-direction: column;
+    }
+
+    .input-row div input {
+        width: 100%;
+    }
+
+    .last-col input {
+        width: 100%;
+    }
+    
+}
