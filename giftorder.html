@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Western Food Taste">
+    <meta name="description" content="For Assignment Purpose">
+
+    <title>Western Taste | Gift Card</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/giftorder.css" />
+    <link rel="icon" href="images/company-logo-black.svg" type="image/x-icon">
+    <script type="text/javascript">
+        function quantity() {
+            for (num = 0; num <= 10; num++) {
+                document.write("<option>" + num + "</option>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <button id="barBtn">
+            <img src="images/icons/bar-icon.svg">
+        </button>
+        <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="giftcard.html" class="active">Gift Card</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="faq-link"><a href="faq.html">FAQs</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <a href="faq.html">
+                <button id="faqBtn">
+                    <img src="images/icons/faq-icon.svg">
+                </button>
+            </a>
+            <a href="cart.html">
+                <button id="cartBtn">
+                    <img src="images/icons/cart-icon.svg">
+                </button>
+            </a>
+            <button id="accountBtn" onclick="checkAccount()">
+                <img src="images/icons/account-icon.svg">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Gift Card</h1>
+
+        <form id="gift-card-form">
+            <div class="box-slider">
+                <div class="slider">
+                    <input type="radio" name="card" id="radio1">
+                    <input type="radio" name="card" id="radio2">
+                    <input type="radio" name="card" id="radio3">
+                    <input type="radio" name="card" id="radio4">
+    
+                    <div class="nav-swipe">
+                        <label for="radio1" class="bar bar1"></label>
+                        <label for="radio2" class="bar bar2"></label>
+                        <label for="radio3" class="bar bar3"></label>
+                        <label for="radio4" class="bar bar4"></label>
+                    </div>
+    
+                    <div class="slide s1">
+                        <img src="images/menu-images/giftcard1.png" alt="GiftCard1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/menu-images/giftcard2.png" alt="GiftCard2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/menu-images/giftcard3.png" alt="GiftCard3">
+                    </div>
+                    <div class="slide">
+                        <img src="images/menu-images/giftcard4.png" alt="GiftCard4">
+                    </div>
+                </div>
+            </div>
+
+            <h2>View your favourite Gift Card Design with the bar button</h2>
+
+            <div class="gift-card-row">
+                <label for="gift-card-design">Design:</label>
+                <div class="dropdown">
+                    <input type="text" id="gift-card-design" name="gift-card-design" placeholder="Select card design" onclick="chooseCard()">
+                    <div class="option">
+                        <div onclick="show('Design 1')"><img src="images/menu-images/giftcard1.png" name="giftcard1">Design 1</div>
+                        <div onclick="show('Design 2')"><img src="images/menu-images/giftcard2.png" name="giftcard2">Design 2</div>
+                        <div onclick="show('Design 3')"><img src="images/menu-images/giftcard3.png" name="giftcard3">Design 3</div>
+                        <div onclick="show('Design 4')"><img src="images/menu-images/giftcard4.png" name="giftcard4">Design 4</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gift-card-row">
+                <label for="gift-card">Amount: </label>
+                <select name="Gift Card" id="gift-card" onchange="qtySelect()" required>
+                    <option>Select amount</option>
+                    <option value="10">RM 10 Gift Card</option>
+                    <option value="20">RM 20 Gift Card</option>
+                    <option value="50">RM 50 Gift Card</option>
+                    <option value="100">RM 100 Gift Card</option>
+                    <option value="200">RM 200 Gift Card</option>
+                </select>
+            </div>
+
+            <div class="gift-card-row">
+                <label for="gift-card-qty">Quantity: </label>
+                <select name="Gift Card Quantity" id="gift-card-qty" onchange="calPrice();" disabled>
+                    <option>0</option>
+                </select>
+            </div>
+                
+            <div class="gift-card-row">
+                <label for="gift-card-total">Price: </label>
+                <input type="text" name="Gift Card Total" id="gift-card-total" value="0.00" disabled/>
+            </div>
+
+            <input type="submit" id="gift-card-add" value="A D D   T O   C A R T" onclick="addtoCart()"/>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col footer-company-logo">
+                <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Directory</h4>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="giftcard.html">Gift Card</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col info-col">
+                <h4>Location</h4>
+                <address>
+                    <a href="https://www.google.com/maps/place/B.A.J+Restaurant/@3.1979862,101.7124171,21z/data=!4m7!3m6!1s0x31cc380690738eff:0xfd5d4dc5429cf0ee!4b1!8m2!3d3.1980252!4d101.7125528!16s%2Fg%2F11dymnjxqg?entry=ttu">
+                        16, Jalan Genting Kelang,
+                        Taman Shah Nitro,
+                        51000 Setapak, Kuala Lumpur
+                    </a>
+                </address>
+
+                <h4>Contact</h4>
+                <p>Customer Service : <a href="tel:+60333442073">+(603) 33442073</a></p>
+                <p>Email : <a href="mailto:westerntaste@gmail.com">westerntaste@gmail.com</a></p>
+            </div>
+
+            <div class="footer-col last-footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://instagram.com/tarumt.official" target="_blank"><img src="images/icons/instagram-icon.svg"></a>
+                    <a href="https://www.facebook.com/tarumtkl" target="_blank"><img src="images/icons/youtube-icon.svg"></a>
+                    <a href="https://api.whatsapp.com/send?phone=601110843326" target="_blank"><img src="images/icons/whatsapp-icon.svg"></a>
+                </div>
+
+                <h4>Carrer</h4>
+                <ul>
+                    <li><a href="hiring.html">Join Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copy">
+            Copyright &copy; 2024 Western Taste. All rights reserved.
+        </div>
+    </footer>
+    
+    <script src="js/layout.js"></script>
+    <script src="js/giftcard.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Western Food Taste">
+    <meta name="description" content="For Assignment Purpose">
+    
+    <title>Western Taste</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" href="images/company-logo-black.svg" type="image/x-icon">
+</head>
+<body onload="readUser()">
+    <header>
+        <button id="barBtn">
+            <img src="images/icons/bar-icon.svg">
+        </button>
+        <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="giftcard.html">Gift Card</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="faq-link"><a href="faq.html">FAQs</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <a href="faq.html">
+                <button id="faqBtn">
+                    <img src="images/icons/faq-icon.svg">
+                </button>
+            </a>
+            <a href="cart.html">
+                <button id="cartBtn">
+                    <img src="images/icons/cart-icon.svg">
+                </button>
+            </a>
+            <button id="accountBtn" onclick="checkAccount()">
+                <img src="images/icons/account-icon.svg">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div id="slideshow">
+            <div class="slideImages">
+                <div class="slide">
+                    <img class="big-banner" src="images/banner1-1.png" alt="">
+                    <img class="small-banner" src="images/banner1-2.png" alt="">
+
+                    <div class="slide-content">
+                        <h1>Welcome to Western Taste</h1>
+                        <p>Restaurant & Wine Bar</p><br />
+                        <a href="menu.html"><button class="content-button">M E N U</button></a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img class="big-banner"src="images/banner2-1.png" alt="">
+                    <img class="small-banner"src="images/banner2-2.png" alt="">
+
+                    <div class="slide-content">
+                        <h1>Rservation Now</h1>
+                        <p>Secure Your Table Hassle-Free</p><br />
+                        <a href="reservation.html"><button class="content-button">B O O K&nbsp;&nbsp;N O W</button></a>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <img class="big-banner" src="images/banner3-1.png" alt="">
+                    <img class="small-banner" src="images/banner3-2.png" alt="">
+
+                    <div class="slide-content">
+                        <h1>Discover Our Latest Flavors</h1>
+                        <p>Introducing New Culinary Creations!</p><br />
+                        <a href="dessert.html"><button class="content-button">C L I C K&nbsp;&nbsp;H E R E</button></a>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <img class="big-banner"src="images/banner4-1.png" alt="">
+                    <img class="small-banner"src="images/banner4-2.png" alt="">
+
+                    <div class="slide-content">
+                        <h1>Unlock Exclusive Benefits</h1>
+                        <p> Join Western Taste Membership Today!</p><br />
+                        <a href="login.html"><button class="content-button">J O I N&nbsp;&nbsp;N O W</button></a>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="prevBtn" onclick="prevSlide()"><img src="images/icons/left-arrow-icon.svg"></button>         
+            <button id="nextBtn" onclick="nextSlide()"><img src="images/icons/right-arrow-icon.svg"></button>
+        </div>
+
+        <section id="about-section">
+            <div class="content-container">
+                <div class="content-text">
+                    <h1>About Us</h1>
+                    <p>Welcome to Western Taste, where the spirit of the American West meets culinary innovation. Our passion lies in crafting dishes that embody the rugged charm and rich heritage of the frontier. From hearty cowboy classics to bold fusion creations, each bite tells a story of tradition and creativity. Join us on a culinary journey as we celebrate the flavors that define our roots and inspire our future.</p>
+                    <a href="about.html"><button class="section-button">Learn More</button></a>
+                </div>
+
+                <div class="content-image">
+                    <img src="images/about-historicalorigins.png">
+                </div>
+            </div>
+        </section>
+
+        <section id="event-section">
+            <div class="content-container">
+                <div class="content-image">
+                    <img src="images/event.png">
+                </div>
+
+                <div class="content-text">
+                    <h1>Promotion & Event</h1>
+                    <p>Unlock exclusive perks and benefits by signing up as a member today! Join now to access six amazing offers awaiting you.</p>
+                    <a href="event.html"><button class="section-button">Explore Event</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommend-section">
+            <h1>Chef Recommends</h1>
+
+            <img src="images/vintage-line.png">
+
+            <div id="recommend">
+                <a href="entree.html">
+                    <div class="recommend-card" id="rcard1">
+                        <h2>Burger</h2>
+                    </div>
+                </a>
+
+                <a href="beverage.html">
+                    <div class="recommend-card" id="rcard2">
+                        <h2>Latte</h2>         
+                    </div>
+                </a>
+
+                <a href="dessert.html">
+                    <div class="recommend-card" id="rcard3">
+                        <h2>Brownie</h2>      
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="reservation-section">
+            <div class="content-container">
+                <div class="content-image">
+                    <img src="images/reservation-banner.svg">
+                </div>
+
+                <div class="content-text">
+                    <h1>Reservation</h1>
+                    <p>Secure your table hassle-free with our reservation section. Whether it's an intimate dinner or a group gathering, reserve your spot in just a click. Don't miss out - book now and indulge in a culinary adventure with us!</p>
+                    <a href="reservation.html"><button class="section-button">Book Now</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews-section">
+            <h1>Customer's Review</h1>
+
+            <div id="reviews">
+                <div class="review-card">
+                    <div class="quote-icon">
+                        <img src="images/icons/quote-icon.svg">
+                    </div>
+
+                    <p>"Hands down the best burger joint in town. Juicy patties, fresh toppings, and killer fries. Can't get enough!"</p>
+                    <cite>Miko</cite>
+
+                    <div class="star-icon">
+                        <img src="images/icons/four-star.svg">
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="quote-icon">
+                        <img src="images/icons/quote-icon.svg">
+                    </div>
+
+                    <p>"Cozy vibes and finger-licking ribs! A must-try for anyone craving comfort food done right."</p>
+ 
+                    <cite>Yan Heng</cite>
+
+                    <div class="star-icon">
+                        <img src="images/icons/four-half-star.svg">
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="quote-icon">
+                        <img src="images/icons/quote-icon.svg">
+                    </div>
+
+                    <p>"Found this place by chance and it's now my go-to spot for authentic Western flavors. The BBQ chicken hit all the right notes. Highly recommend!"</p>
+      
+                    <cite>Yong Kai</cite>
+
+                    <div class="star-icon">
+                        <img src="images/icons/four-star.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col footer-company-logo">
+                <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Directory</h4>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="giftcard.html">Gift Card</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col info-col">
+                <h4>Location</h4>
+                <address>
+                    <a href="https://www.google.com/maps/place/B.A.J+Restaurant/@3.1979862,101.7124171,21z/data=!4m7!3m6!1s0x31cc380690738eff:0xfd5d4dc5429cf0ee!4b1!8m2!3d3.1980252!4d101.7125528!16s%2Fg%2F11dymnjxqg?entry=ttu">
+                        16, Jalan Genting Kelang,
+                        Taman Shah Nitro,
+                        51000 Setapak, Kuala Lumpur
+                    </a>
+                </address>
+
+                <h4>Contact</h4>
+                <p>Customer Service : <a href="tel:+60333442073">+(603) 33442073</a></p>
+                <p>Email : <a href="mailto:westerntaste@gmail.com">westerntaste@gmail.com</a></p>
+            </div>
+
+            <div class="footer-col last-footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://instagram.com/tarumt.official" target="_blank"><img src="images/icons/instagram-icon.svg"></a>
+                    <a href="https://www.facebook.com/tarumtkl" target="_blank"><img src="images/icons/youtube-icon.svg"></a>
+                    <a href="https://api.whatsapp.com/send?phone=601110843326" target="_blank"><img src="images/icons/whatsapp-icon.svg"></a>
+                </div>
+
+                <h4>Carrer</h4>
+                <ul>
+                    <li><a href="hiring.html">Join Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copy">
+            Copyright &copy; 2024 Western Taste. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/layout.js"></script>
+    <script src="js/index.js"></script>   
+</body>
+</html>

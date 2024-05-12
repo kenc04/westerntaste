@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Western Food Taste">
+    <meta name="description" content="For Assignment Purpose">
+    
+    <title>Western Taste | Event</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/event.css" />
+    <link rel="icon" href="images/company-logo-black.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <button id="barBtn">
+            <img src="images/icons/bar-icon.svg">
+        </button>
+        <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="giftcard.html">Gift Card</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="faq-link"><a href="faq.html">FAQs</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <a href="faq.html">
+                <button id="faqBtn">
+                    <img src="images/icons/faq-icon.svg">
+                </button>
+            </a>
+            <a href="cart.html">
+                <button id="cartBtn">
+                    <img src="images/icons/cart-icon.svg">
+                </button>
+            </a>
+            <button id="accountBtn" onclick="checkAccount()">
+                <img src="images/icons/account-icon.svg">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Promotions</h1>
+
+        <h2>Unlock exclusive perks and benefits by signing up as a member today! Join now to access six amazing offers awaiting you.</h2>
+        <div id="promtion-container">
+            <div class="bubble">
+                <div>
+                    <img src="images/promo-freegift.png">
+                </div>
+
+                <span>FREE Gift<br/>upon sign up</span>
+            </div>
+
+            <div class="bubble">
+                <div>
+                    <img src="images/promo-birthday.png">
+                </div>
+
+                <span>Birthday Month<br/>treat</span>
+            </div>
+
+            <div class="bubble">
+                <div>
+                    <img src="images/promo-point.png">
+                </div>
+
+                <span>Point collection</span>
+            </div>
+
+            <div class="bubble">
+                <div>
+                    <img src="images/promo-member.png">
+                </div>
+
+                <span>MEMBER DAY SPECIAL</span>
+            </div>
+
+            <div class="bubble">
+                <div>
+                    <img src="images/promo-exclusive.png">
+                </div>
+
+                <span>Exclusive member's deals and offer</span>
+            </div>
+
+            <div class="bubble">
+                <div>
+                    <img src="images/promo-reward.png">
+                </div>
+
+                <span>Higher spender reward</span>
+            </div>
+        </div>
+
+        <h1>Events</h1>
+
+        <div id="event-container">
+            <div class="event">
+                <div class="event-title">
+                    <h3>Vesak Day</h3>
+
+                    <img src="images/icons/down-arrow-icon.svg" class="down-arrow">
+                </div>
+
+                <div class="content">
+                    <p>
+                        <span>[Wednesday &nbsp; 22 May 2024 &nbsp; 9 am ~ 9 pm]</span><br/><br/>
+                        Special Menu<br/>
+                        Design a menu to commemorate Vesak Day, featuring vegetarian options in line with the tradition of abstaining from meat during this holiday. Incorporate names and ingredients that reflect Buddhist culture for an authentic festive experience.<br/><br/>
+                        Promotional Offers<br/>
+                        Attract diners with exclusive deals, such as package discounts or special rates for patrons wearing Buddhist symbols.<br/><br/>
+                        Cultural Experience<br/>
+                        Transform the restaurant ambiance with themed decorations like Buddha statues and Buddhist-inspired decor. Enhance the atmosphere with soothing Buddhist music.<br/><br/>
+                        Social Media Promotion<br/>
+                        Utilise social media platforms to spread the word about Vesak Day events and promotions. Share enticing visuals of the special menu and offers to engage a wider audience.<br/><br/>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="event">
+                <div class="event-title">
+                    <h3>Hari Raya Haji</h3>
+                    
+                    <img src="images/icons/down-arrow-icon.svg" class="down-arrow">
+                </div>
+                <div class="content">
+                    <p>
+                        <span>[Monday &nbsp; 17 June 2024 &nbsp; 9 am ~ 9 pm]</span><br/>
+                        <span>[Tuesday &nbsp; 18 June 2024 &nbsp; 9 am ~ 9 pm]</span><br/><br/>
+                        Special Menu<br/>
+                        Design a special menu featuring traditional Malaysian delicacies for the Hari Raya Haji festival, including meat patties, kebabs, Haji rice, and more.<br/><br/>
+                        Promotional Offers<br/>
+                        Introduce exclusive Hari Raya Haji packages and enticing promotions like BUY-1-GET-1-FREE, discounts, etc.<br/><br/>
+                        Cultural Experience<br/>
+                        Transform the restaurant with themed decorations, traditional music, and videos to immerse guests in the Hari Raya Haji atmosphere. Encourage staff to wear traditional attire.<br/><br/>
+                        Social Media Promotion<br/>
+                        Utilise social media platforms to spread event details through captivating posters and promotional images. Encourage guests to share their experience using specific hashtags.<br/><br/>
+                    </p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div  class="event-title">
+                    <h3>National Day</h3>
+
+                    <img src="images/icons/down-arrow-icon.svg" class="down-arrow">
+                </div>
+                <div class="content">
+                    <p>
+                        <span>[Saturday &nbsp; 31 August 2024 &nbsp; 9 am ~ 9 pm]</span><br/>
+                        <span>[Sunday &nbsp; 1 September 2024 &nbsp; 9 am ~ 9 pm]</span><br/><br/>
+                        Special Menu<br/>
+                        Design a themed menu featuring traditional favourites and dishes inspired by the colours of the national flag.<br/><br/>
+                        Promotional Offers<br/>
+                        Provide enticing deals like BUY-1-GET-1-FREE, fixed package prices, and discount coupons.<br/><br/>
+                        Cultural Experience<br/>
+                        Decorate the restaurant with Fourth of July-themed decorations, including national flags.<br/><br/>
+                        Social Media Promotion<br/>
+                        Utilise social media to promote events, encouraging customers to share their experiences and boost visibility.<br/><br/>
+                    </p>
+                </div>
+            </div>
+        
+            <div class="event">
+                <div  class="event-title">
+                    <h3>Malaysia's Foundation Day</h3>
+
+                    <img src="images/icons/down-arrow-icon.svg" class="down-arrow">
+                </div>
+                <div class="content">
+                    <p>
+                        <span>[Monday &nbsp; 16 September 2024 &nbsp; 9 am ~ 9 pm]</span><br/>
+                        <span>[Tuesday &nbsp; 17 September 2024 &nbsp; 9 am ~ 9 pm]</span><br/><br/>
+                        Special Menu<br/>
+                        Craft a menu featuring authentic Malaysian cuisine, showcasing traditional dishes like satay, curry, and more.<br/><br/>
+                        Promotional Offers<br/>
+                        Delight guests with exclusive promotions such as BUY-1-GET-1-FREE, group discounts, and more.<br/><br/>
+                        Cultural Experience<br/>
+                        Transform the restaurant with Malaysian-inspired decor and immerse guests in the sounds of Malaysia with traditional music.<br/><br/>
+                        Social Media Promotion<br/>
+                        Spread the word on social platforms and inspire diners to share their experiences. Host engaging contests to boost online interaction.<br/><br/>
+                    </p>
+                </div>
+            </div>
+        
+            <div class="event">
+                <div  class="event-title">
+                    <h3>Deepavali</h3>
+
+                    <img src="images/icons/down-arrow-icon.svg" class="down-arrow">
+                </div>
+                <div class="content">
+                    <p>
+                        <span>[Thursday &nbsp; 31 October 2024 &nbsp; 9 am ~ 9 pm]</span><br/><br/>
+                        Special Menu<br/>
+                        Introduce a captivating Deepavali-themed menu showcasing both traditional Indian delicacies and inventive fusion creations.<br/><br/>
+                        Promotional Offers<br/>
+                        Extend exclusive discounts and deals, including enticing options like BUY-1-GET-1-FREE, group packages, or exclusive pre-order incentives.<br/><br/>
+                        Cultural Experience<br/>
+                        Transform the restaurant ambiance into a vibrant reflection of Deepavali's cultural richness. Enliven the space with traditional Indian music and host complimentary rangoli workshops to immerse guests in the festive spirit.<br/><br/>
+                        Social Media Promotion<br/>
+                        Amplify our promotions and special menu offerings across social media platforms to inspire guests to share their memorable Deepavali experiences, fostering community engagement and excitement.<br/><br/>
+                    </p>
+                </div>
+            </div>
+        
+            <div class="event">
+                <div class="event-title">
+                    <h3>Christmas</h3>
+
+                    <img src="images/icons/down-arrow-icon.svg" class="down-arrow">
+                </div>
+
+                <div class="content">
+                    <p>
+                        <span>[Wednesday &nbsp; 25 December 2024 &nbsp; 9 am ~ 9 pm]</span><br/><br/>
+                        Special Menu<br/>
+                        Offering classic Christmas delicacies with local flavours.<br/><br/>
+                        Promotional Offers<br/>
+                        Introduce fixed-price packages and early booking offers to attract more customers.<br/><br/>
+                        Cultural Experience<br/>
+                        Decorate the restaurant and add a Christmas tree and lights to create a warm and festive atmosphere.<br/><br/>
+                        Social Media Promotion<br/>
+                        Use social media to promote promotions and special menus, and host interactive online events to increase awareness and engagement.<br/><br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col footer-company-logo">
+                <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Directory</h4>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="giftcard.html">Gift Card</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col info-col">
+                <h4>Location</h4>
+                <address>
+                    <a href="https://www.google.com/maps/place/B.A.J+Restaurant/@3.1979862,101.7124171,21z/data=!4m7!3m6!1s0x31cc380690738eff:0xfd5d4dc5429cf0ee!4b1!8m2!3d3.1980252!4d101.7125528!16s%2Fg%2F11dymnjxqg?entry=ttu">
+                        16, Jalan Genting Kelang,
+                        Taman Shah Nitro,
+                        51000 Setapak, Kuala Lumpur
+                    </a>
+                </address>
+
+                <h4>Contact</h4>
+                <p>Customer Service : <a href="tel:+60333442073">+(603) 33442073</a></p>
+                <p>Email : <a href="mailto:westerntaste@gmail.com">westerntaste@gmail.com</a></p>
+            </div>
+
+            <div class="footer-col last-footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://instagram.com/tarumt.official" target="_blank"><img src="images/icons/instagram-icon.svg"></a>
+                    <a href="https://www.facebook.com/tarumtkl" target="_blank"><img src="images/icons/youtube-icon.svg"></a>
+                    <a href="https://api.whatsapp.com/send?phone=601110843326" target="_blank"><img src="images/icons/whatsapp-icon.svg"></a>
+                </div>
+
+                <h4>Carrer</h4>
+                <ul>
+                    <li><a href="hiring.html">Join Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copy">
+            Copyright &copy; 2024 Western Taste. All rights reserved.
+        </div>
+    </footer>
+    
+    <script src="js/layout.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html>

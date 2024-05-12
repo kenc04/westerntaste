@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Western Food Taste">
+    <meta name="description" content="For Assignment Purpose">
+    
+    <title>Western Taste | Log In</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="icon" href="images/company-logo-black.svg" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="login-container">
+            <div class="form-container">
+                <form id="login-form">
+                    <a href="index.html" class="device-640-logo"><img src="images/company-logo-black.svg"></a>
+ 
+                    <div class="login-details">
+                        <h1>Login</h1>
+                        <div class="input-field login-field">
+                            <img src="images/icons/username-icon.svg">
+                            <input type="text" id="loginName" placeholder="Username" required>
+                        </div>
+        
+                        <div class="input-field login-field">
+                            <img src="images/icons/password-icon.svg">
+                            <input type="password" id="loginPass" placeholder="Password" required>
+                        </div>
+        
+                        <input type="submit" class="submitBtn" id="loginBtn" value="L O G I N" onclick="login()">
+        
+                        <p class="method-text">Or login with</p>
+                        <div class="login-method">
+                            <a href="https://accounts.google.com.my/" target="_blank"><img src="images/icons/google-icon.svg"></a>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="images/icons/facebook-icon.svg"></a>
+                        </div>
+                        <p class="account-text">Dont't have an account? <a href="#" id="change-signup-btn2" onclick="changeSignup()">Sign up</a></p>    
+                    </div>
+                </form>
+    
+                <form id="signup-form">
+                    <a href="index.html" class="device-640-logo"><img src="images/company-logo-black.svg"></a>
+                    
+                    <div class="signup-details">
+                        <h1>Sign Up</h1>
+                        <div class="input-field signup-field">
+                            <img src="images/icons/username-icon.svg">
+                            <input type="text" id="signName" placeholder="Username">
+                        </div>
+        
+                        <div class="input-field signup-field">
+                            <img src="images/icons/password-icon.svg">
+                            <input type="password" id="signPass1" placeholder="Password">
+                        </div>
+        
+                        <div class="input-field signup-field">
+                            <img src="images/icons/password-icon.svg">
+                            <input type="password" id="signPass2" placeholder="Confirm Password">
+                        </div>
+        
+                        <input type="submit" class="submitBtn" id="signupBtn" value="S I G N   U P" onclick="signup()">
+        
+                        <p class="method-text">Or sign up with</p>
+                        <div class="login-method">
+                            <a href="https://accounts.google.com.my/" target="_blank"><img src="images/icons/google-icon.svg"></a>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="images/icons/facebook-icon.svg"></a>
+                        </div>
+                        <p class="account-text">Already have account? <a href="#" id="change-login-btn2" onclick="changeLogin()">Log In</a> </p>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="panels-container">
+                <div class="panel left-panel">
+                    <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+    
+                    <div class="content">
+                        <h2>Welcome Back</h2>
+                        <p>Ready to indulge in your favorite flavors again? Log in to your account to continue your culinary journey with Western Taste.</p>
+                        <button class="changeBtn" id="change-login-btn1" onclick="changeLogin()">L O G I N</button>
+                    </div>
+                </div>
+    
+                <div class="panel right-panel">
+                    <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+    
+                    <div class="content">
+                        <h2>Join Our Culinary Community</h2>
+                        <p>Discover a world of delicious flavors and exceptional dining experiences. New to Western Taste? Sign up now to begin your gourmet adventure!</p>
+                        <button class="changeBtn" id="change-signup-btn1" onclick="changeSignup()">S I G N&nbsp;&nbsp;U P</button>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

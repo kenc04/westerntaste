@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Western Food Taste">
+    <meta name="description" content="For Assignment Purpose">
+    
+    <title>Western Taste | Reservation</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/reservation.css" />
+    <link rel="icon" href="images/company-logo-black.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <button id="barBtn">
+            <img src="images/icons/bar-icon.svg">
+        </button>
+        <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="giftcard.html">Gift Card</a></li>
+                <li><a href="reservation.html" class="active">Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="faq-link"><a href="faq.html">FAQs</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <a href="faq.html">
+                <button id="faqBtn">
+                    <img src="images/icons/faq-icon.svg">
+                </button>
+            </a>
+            <a href="cart.html">
+                <button id="cartBtn">
+                    <img src="images/icons/cart-icon.svg">
+                </button>
+            </a>
+            <button id="accountBtn" onclick="checkAccount()">
+                <img src="images/icons/account-icon.svg">
+            </button>
+        </div>
+    </header>
+
+    <div class="reservation-banner">
+        <div class="image-container"></div>
+        
+        <div class="banner-text">
+            <h1>Reservation</h1>
+        </div>
+    </div>
+
+    <main>  
+        <div class="header">
+            <h1>Book Your Table</h1>
+            <button class="header-button" onclick="showPopup()">R E S E R V A T I O N</button>
+        </div>
+
+        <div id="popup" class="popup" style="display: none;">
+            <div class="popup-content">
+                <form id="reservation-form">
+                    <h1>Reservation Form</h1>
+                    <h2>Personal Information</h2>
+    
+                    <small>We follow time in 12-hour format</small>
+                    
+                    <div class="input-row">
+                        <div>
+                            <label for="fname">First Name:<span class="red">*</span></label>
+                            <input type="text" id="booking-fname" name="First Name" placeholder="William" required>
+                        </div>
+                        
+                        <div>
+                            <label for="lname">Last Name:<span class="red">*</span></label>
+                            <input type="text" id="booking-lname" name="Last Name" placeholder="Maximus" required>    
+                        </div>
+                    </div>
+            
+                    <div class="input-row">
+                        <div>
+                            <label for="email">Email Address:<span class="red">*</span></label>
+                            <input type="text" id="booking-email" name="Email" placeholder="example@gmail.com" required>
+                        </div>
+            
+                        <div>
+                            <label for="phone">Phone Number:<span class="red">*</span></label>
+                            <input type="tel" id="booking-phone" name="Phone" placeholder="014-435-3454"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        </div>
+                    </div>
+            
+                    <div class="input-row">
+                        <div>
+                            <label for="date">Date:<span class="red">*</span></label>
+                            <input type="date" id="booking-date" name="Booking Date" required>
+    
+                        </div>
+                        
+                        <div>
+                            <label for="time">Time:<span class="red">*</span></label>
+                            <input type="time" id="booking-time" name="Booking Time" required>    
+                        </div>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div>
+                            <label for="number of Pax">Number of Pax:<span class="red">*</span></label>
+                            <input type="number" id="booking-pax" name="Pax" value="1" required>
+                        </div>
+        
+                        <div>
+                            <label for="MoreInfo">More details:</label>
+                            <input type="text" id="booking-info" name="MoreInfo" placeholder="Details">   
+                        </div>
+                    </div>
+        
+                    <div class="button-row">
+                        <input type="submit" value="S U B M I T" onclick="makeReservation()">
+    
+                        <input type="reset" value="R E S E T">
+    
+                        <button onclick="closePopup()">C L O S E</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="reservation-container">
+            <div class="left-side">
+                <img src="/images/reservation-policy.png">
+            </div>
+
+            <div class="right-side">
+                <h2>Our Offerings</h2>
+                <ul>
+                    <li>
+                        We offer a unique western food on our menu. Kindly indicate your dietary restriction (if any) and /or any special
+                        occasion arrangements(if needed) upon making the reservation with 24 hours minimum prior to your dine-in date
+                    </li>
+                </ul>
+                <br>
+                <h2>Reservation Policy</h2>
+                <ul>
+                    <li>
+                        <h3>Cancellation & Changes:</h3>
+                        <li>Please let us know at least 24 hours in advance if you need to cancel or change your reservation </li>
+                        <li>Cancellations made within 24 hours of your reservation will result in a charge of RM60 per diner</li>
+                        <li>We accept reservation between 10am - 7pm for us to prepare each customer their dining experience </li>
+                    </li>
+                    <li>
+                        <h3>Table Hold Time:</h3>
+                        <li>We can hold your table for up to 20 minutes past your reservation time</li>
+                        <li>After 20 minutes, your table may be released to other guests to avoid delays for the next seating</li>
+                    </li>
+                </ul>
+                <br>
+                <h2> Cancellation & Modification Policy </h2>
+                <ul>
+                    <li>
+                        <h3>Notice Period:</h3>
+                        <li>Changes to reservation times or cancellations must be made at least 24 hours prior to the reservation</li>
+                        <li>After the 24-hour mark, no changes or cancellations are allowed</li>
+                    </li>
+                    <li>
+                        <h3>Late Cancellations:</h3>
+                        <li>Cancellation made within 24 hours of the reservation constitutes as a late cancellation and may be subject to a charge of RM150 nett per diner.</li>
+                        <li>No-show reservations will also be charged RM100 nett per diner.</li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col footer-company-logo">
+                <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Directory</h4>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="giftcard.html">Gift Card</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col info-col">
+                <h4>Location</h4>
+                <address>
+                    <a href="https://www.google.com/maps/place/B.A.J+Restaurant/@3.1979862,101.7124171,21z/data=!4m7!3m6!1s0x31cc380690738eff:0xfd5d4dc5429cf0ee!4b1!8m2!3d3.1980252!4d101.7125528!16s%2Fg%2F11dymnjxqg?entry=ttu">
+                        16, Jalan Genting Kelang,
+                        Taman Shah Nitro,
+                        51000 Setapak, Kuala Lumpur
+                    </a>
+                </address>
+
+                <h4>Contact</h4>
+                <p>Customer Service : <a href="tel:+60333442073">+(603) 33442073</a></p>
+                <p>Email : <a href="mailto:westerntaste@gmail.com">westerntaste@gmail.com</a></p>
+            </div>
+
+            <div class="footer-col last-footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://instagram.com/tarumt.official" target="_blank"><img src="images/icons/instagram-icon.svg"></a>
+                    <a href="https://www.facebook.com/tarumtkl" target="_blank"><img src="images/icons/youtube-icon.svg"></a>
+                    <a href="https://api.whatsapp.com/send?phone=601110843326" target="_blank"><img src="images/icons/whatsapp-icon.svg"></a>
+                </div>
+
+                <h4>Carrer</h4>
+                <ul>
+                    <li><a href="hiring.html">Join Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copy">
+            Copyright &copy; 2024 Western Taste. All rights reserved.
+        </div>
+    </footer>
+    
+    <script src="js/layout.js"></script>
+    <script src="js/reservation.js"></script>
+</body>
+</html>

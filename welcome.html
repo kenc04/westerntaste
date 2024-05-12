@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Western Food Taste">
+    <meta name="description" content="For Assignment Purpose">
+    
+    <title>Western Taste | Welcome</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/welcome.css">
+    <link rel="icon" href="images/company-logo-black.svg" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="details-container">
+            <div class="form-container">
+                <div class="details-company-logo">
+                    <a href="index.html"><img src="images/company-logo-black.svg" class="company-logo" alt="Western Taste"></a>
+                </div>
+
+                <form id="details-form">
+                    <h1>Details</h1>
+    
+                    <div class="details-field">
+                        <img src="images/icons/username-icon.svg">
+                        <input type="text" placeholder="First Name" id="user-fname" required>
+                    </div>
+                    
+                    <div class="details-field">
+                        <img src="images/icons/username-icon.svg">
+                        <input type="text" placeholder="Last Name" id="user-lname" required>
+                    </div>
+    
+                    <div class="details-field">
+                        <img src="images/icons/email-icon.svg">
+                        <input type="text" placeholder="Email" id="user-email" required>
+                    </div>
+    
+                    <input type="submit" class="submitBtn" value="S U B M I T" onclick="saveDetails()">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

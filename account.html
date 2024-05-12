@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Western Food Taste">
+    <meta name="description" content="For Assignment Purpose">
+    
+    <title>Western Taste | Account</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/account.css" />
+    <link rel="icon" href="images/company-logo-black.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <button id="barBtn">
+            <img src="images/icons/bar-icon.svg">
+        </button>
+        <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="giftcard.html">Gift Card</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="faq-link"><a href="faq.html">FAQs</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <a href="faq.html">
+                <button id="faqBtn">
+                    <img src="images/icons/faq-icon.svg">
+                </button>
+            </a>
+            <a href="cart.html">
+                <button id="cartBtn">
+                    <img src="images/icons/cart-icon.svg">
+                </button>
+            </a>
+            <button id="accountBtn" onclick="checkAccount()">
+                <img src="images/icons/account-icon.svg">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div id="account-container">
+            <div id="account-nav">
+                <ul>
+                    <li id="account" onclick="changeContent(0)">Account</li>
+                    <li id="comm" onclick="changeContent(1)">Communication Preferences</li>
+                    <li id="setting" onclick="changeContent(2)">Setting</li>
+                    <li onclick="logOut()">Log Out</li>
+                </ul>
+            </div>
+
+            <div id="account-content">
+                <div class="contents" id="account-section">
+                    <h1>Account</h1>
+                    
+                    <form>
+                        <div class="account-row name-row">
+                            <input type="text" name="User First Name" id="user-fname" placeholder="First Name" required>
+                            <input type="text" name="User Last Name" id="user-lname" placeholder="Last Name" required>
+                        </div>
+    
+                        <div class="account-row">
+                            <input type="email" name="User Email" id="user-email" placeholder="Email" required>
+                        </div>
+                        
+                        <button type="submit" id="saveBtn" onclick="saveDetails()">S A V E</button>
+                    </form>
+                </div>
+
+                <div class="contents" id="comm-section">
+                    <h1>Communication Preferences</h1>
+                    <form action="#">
+                        <fieldset>
+                            <legend>Contact Methods</legend>
+                            <div>
+                                <input type="checkbox" id="email" name="email" checked>
+                                <label for="email">Email</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="sms" name="sms">
+                                <label for="sms">SMS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="phone" name="phone">
+                                <label for="phone">Phone</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Frequency</legend>
+                            <div>
+                                <input type="radio" id="daily" name="frequency" checked>
+                                <label for="daily">Daily</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="weekly" name="frequency">
+                                <label for="weekly">Weekly</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="monthly" name="frequency">
+                                <label for="monthly">Monthly</label>
+                            </div>
+                        </fieldset>
+
+                        <button type="submit" id="saveBtn" onclick="saveDetails()">S A V E</button>
+                    </form>
+                </div>
+
+                <div class="contents" id="setting-section">
+                    <h1>Setting</h1>
+
+                    <fieldset>
+                        <legend>Notification Settings</legend>
+                        <p>Customize your notification preferences:</p>
+
+                        <div>
+                            <input type="checkbox" id="emailNotifications" name="emailNotifications" checked>
+                            <label for="emailNotifications">Email Notifications:</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="pushNotifications" name="pushNotifications">
+                            <label for="pushNotifications">Push Notifications:</label>
+                        </div>
+                    </fieldset>
+       
+                    <section class="delete-section">
+                        <fieldset>
+                            <legend>Delete Account</legend>
+                            <p>If you delete your account, your personal information will be wiped from Coursera's servers, all of your course activity will be anonymized and any certificates earned will be deleted. This action cannot be undone! Cancel any active subscriptions before you delete your account.</p>
+                            <br>    
+                            <button type="submit" id="deleteBtn" onclick="deleteAccount()">Delete Account</button>
+                        </fieldset>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col footer-company-logo">
+                <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Directory</h4>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="giftcard.html">Gift Card</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col info-col">
+                <h4>Location</h4>
+                <address>
+                    <a href="https://www.google.com/maps/place/B.A.J+Restaurant/@3.1979862,101.7124171,21z/data=!4m7!3m6!1s0x31cc380690738eff:0xfd5d4dc5429cf0ee!4b1!8m2!3d3.1980252!4d101.7125528!16s%2Fg%2F11dymnjxqg?entry=ttu">
+                        16, Jalan Genting Kelang,
+                        Taman Shah Nitro,
+                        51000 Setapak, Kuala Lumpur
+                    </a>
+                </address>
+
+                <h4>Contact</h4>
+                <p>Customer Service : <a href="tel:+60333442073">+(603) 33442073</a></p>
+                <p>Email : <a href="mailto:westerntaste@gmail.com">westerntaste@gmail.com</a></p>
+            </div>
+
+            <div class="footer-col last-footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://instagram.com/tarumt.official" target="_blank"><img src="images/icons/instagram-icon.svg"></a>
+                    <a href="https://www.facebook.com/tarumtkl" target="_blank"><img src="images/icons/youtube-icon.svg"></a>
+                    <a href="https://api.whatsapp.com/send?phone=601110843326" target="_blank"><img src="images/icons/whatsapp-icon.svg"></a>
+                </div>
+
+                <h4>Carrer</h4>
+                <ul>
+                    <li><a href="hiring.html">Join Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copy">
+            Copyright &copy; 2024 Western Taste. All rights reserved.
+        </div>
+    </footer>
+    
+    <script src="js/layout.js"></script>
+    <script src="js/account.js"></script>
+</body>
+</html>

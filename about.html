@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Western Food Taste">
+    <meta name="description" content="For Assignment Purpose">
+    
+    <title>Western Taste | About Us</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="icon" href="images/company-logo-black.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <button id="barBtn">
+            <img src="images/icons/bar-icon.svg">
+        </button>
+        <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="giftcard.html">Gift Card</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="faq-link"><a href="faq.html">FAQs</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <a href="faq.html">
+                <button id="faqBtn">
+                    <img src="images/icons/faq-icon.svg">
+                </button>
+            </a>
+            <a href="cart.html">
+                <button id="cartBtn">
+                    <img src="images/icons/cart-icon.svg">
+                </button>
+            </a>
+            <button id="accountBtn" onclick="checkAccount()">
+                <img src="images/icons/account-icon.svg">
+            </button>
+        </div>
+    </header>
+
+    <main>        
+        <h1>About Us</h1>
+
+        <div id="about-section">
+            <section class="content-container">
+                <div class="about-content">
+                    <h2>Historical Origins</h2>
+                    <img src="images/about-historicalorigins.png">
+                </div>
+
+                <article>
+                    Together, we endeavoured to manifest our vision, birthing this charming western eatery.<br/><br />
+                    The team was established in 2023, followed by the official opening of our western restaurant in 2024.
+                </article>
+            </section>
+
+            <section class="content-container">
+                <div class="about-content">
+                    <h2>Dining Experience</h2>
+                    <img src="images/about-diningexperience.png">
+                </div>
+
+                <article>
+                    This restaurant seamlessly merges contemporary elements with traditional charm, offering a refined ambiance. 
+                    Rich wooden accents and elegant abstract art create an inviting atmosphere, while soft piano melodies add a touch of sophistication.<br/><br/>
+                    With attentive service, the staff ensures guests feel welcomed and embraced, evoking a sense of being in a home away from home.
+                </article>
+            </section>
+            
+            <section class="content-container">
+                <div class="about-content">
+                    <h2>Vision & Mission</h2>
+                    <img src="images/about-vision-mission.png">
+                </div>
+
+                <article>
+                    Discover the heart of Western culinary excellence at our cozy dining hub. With a dedication to authenticity and innovation, we craft high-quality dishes that enchant and delight.<br/><br/>
+                    Our mission is to elevate every dining experience, showcasing carefully curated ingredients and innovative cooking methods in a warm, inviting atmosphere. 
+                    Join us as we enrich our community's culinary tapestry with our delectable offerings.                
+                </article>
+            </section>
+
+            <section class="content-container">
+                <div class="about-content">
+                    <h2>Team Introduction</h2>
+                    <img src="images/about-chef.png">
+                </div>
+
+                <article>
+                    Our team consists of skilled chefs, all graduates from renowned universities, passionately dedicated to the art of cooking.<br/><br/> 
+                    With a blend of tradition and innovation, we craft dishes that reflect our expertise and creativity. 
+                    From classic favorites to modern delights, we're committed to delivering exceptional dining experiences that leave a lasting impression.
+                </article>
+            </section>
+        </div>
+    
+        <h1>Our Location</h1>
+
+        <div id="location-section">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!3m2!1szh-CN!2smy!4v1715009772950!5m2!1szh-CN!2smy!6m8!1m7!1stMwo0JcLvOl0gFNISsaBZQ!2m2!1d3.197949498202482!2d101.7125598970746!3f312.7442653582708!4f7.494551736004894!5f0.7820865974627469"
+                width="100%" height="390" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.6049267137364!2d101.70997787473053!3d3.1980251967771958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc380690738eff%3A0xfd5d4dc5429cf0ee!2sB.A.J%20Restaurant!5e0!3m2!1szh-CN!2smy!4v1715009211398!5m2!1szh-CN!2smy"
+                width="100%" height="390" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col footer-company-logo">
+                <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Directory</h4>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="giftcard.html">Gift Card</a></li>
+                    <li><a href="reservation.html">Book Now</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col info-col">
+                <h4>Location</h4>
+                <address>
+                    <a href="https://www.google.com/maps/place/B.A.J+Restaurant/@3.1979862,101.7124171,21z/data=!4m7!3m6!1s0x31cc380690738eff:0xfd5d4dc5429cf0ee!4b1!8m2!3d3.1980252!4d101.7125528!16s%2Fg%2F11dymnjxqg?entry=ttu">
+                        16, Jalan Genting Kelang,
+                        Taman Shah Nitro,
+                        51000 Setapak, Kuala Lumpur
+                    </a>
+                </address>
+
+                <h4>Contact</h4>
+                <p>Customer Service : <a href="tel:+60333442073">+(603) 33442073</a></p>
+                <p>Email : <a href="mailto:westerntaste@gmail.com">westerntaste@gmail.com</a></p>
+            </div>
+
+            <div class="footer-col last-footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://instagram.com/tarumt.official" target="_blank"><img src="images/icons/instagram-icon.svg"></a>
+                    <a href="https://www.facebook.com/tarumtkl" target="_blank"><img src="images/icons/youtube-icon.svg"></a>
+                    <a href="https://api.whatsapp.com/send?phone=601110843326" target="_blank"><img src="images/icons/whatsapp-icon.svg"></a>
+                </div>
+
+                <h4>Carrer</h4>
+                <ul>
+                    <li><a href="hiring.html">Join Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copy">
+            Copyright &copy; 2024 Western Taste. All rights reserved.
+        </div>
+    </footer>   
+    
+    <script src="js/layout.js"></script>
+</body>
+</html>

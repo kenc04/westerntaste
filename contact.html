@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Western Food Taste">
+    <meta name="description" content="For Assignment Purpose">
+    
+    <title>Western Taste | Contact Us</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="icon" href="images/company-logo-black.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <button id="barBtn">
+            <img src="images/icons/bar-icon.svg">
+        </button>
+        <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="giftcard.html">Gift Card</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li class="faq-link"><a href="faq.html">FAQs</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <a href="faq.html">
+                <button id="faqBtn">
+                    <img src="images/icons/faq-icon.svg">
+                </button>
+            </a>
+            <a href="cart.html">
+                <button id="cartBtn">
+                    <img src="images/icons/cart-icon.svg">
+                </button>
+            </a>
+            <button id="accountBtn" onclick="checkAccount()">
+                <img src="images/icons/account-icon.svg">
+            </button>
+        </div>
+    </header>
+
+    <main>        
+        <div id="first-section">
+            <h1>Contact Us</h1>
+
+            <h2>Welcome to Western Taste</h2>
+        
+            <p>Welcome to Western Taste! We are delighted that you're interested in connecting with us. Whether you have questions about our menu, would like to make a reservation, or want to provide feedback, we're here to help.
+            We strive to respond to all inquiries as promptly as possible. Whether you want to share a memorable dining experience, ask about our healthy options, or provide any other feedback, your input is valuable to us.</p>
+        </div>
+
+        <br>
+        
+        <div id="second-section">            
+            <h2>Leave Us A Message</h2>
+
+            <form class="user-info">
+                <div class="form-row">
+                    <div class="lfield">
+                        <label for="fname">First Name<span class="red">*</span></label>
+                        <br>
+                        <input type="text" name="fname" id="fname" required>
+                    </div>
+
+                    <div class="rfield">
+                        <label for="lname">Last Name<span class="red">*</span></label>
+                        <br>
+                        <input type="text" name="lname" id="lname" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="lfield">
+                        <label for="email">Email<span class="red">*</span></label>
+                        <br>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="rfield">
+                        <label for="phone">Mobile Number<span class="red">*</span></label>
+                        <br>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                </div>
+                
+                <div class="form-row msg-field">
+                    <textarea name="message" id="message" rows="10" cols="100" required></textarea>
+                </div>
+
+                <div class="sub-field">
+                    <button type="submit" id="msgBtn" onclick="submitMSG()">S U B M I T</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="third-section">
+            <div class="our-info">
+                <h3>WHATSAPP US</h3>
+                <p>Customer Service : <a href="tel:+60333442073">+(603) 33442073</a></p>
+                <p>Email : <a href="mailto:westerntaste@gmail.com">westerntaste@gmail.com</a></p>
+            </div>
+
+            <div class="our-info">
+                <h3>Operator Hours</h3>
+                <p>
+                    Mon - Fri: <br>8.00 a.m - 8.00 p.m<br>
+                    <br>
+                    Sat, Sun & Public Holiday: <br>8.00 a.m - 6.00 p.m
+                </p>
+            </div>
+
+            <div class="our-info">
+                <h3>Address</h3>
+                <p>
+                    <a href="https://www.google.com/maps/place/B.A.J+Restaurant/@3.1979862,101.7124171,21z/data=!4m7!3m6!1s0x31cc380690738eff:0xfd5d4dc5429cf0ee!4b1!8m2!3d3.1980252!4d101.7125528!16s%2Fg%2F11dymnjxqg?entry=ttu">
+                        16, Jalan Genting Kelang,<br>
+                        Taman Shah Nitro,<br>
+                        51000 Setapak, Kuala Lumpur
+                    </a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col footer-company-logo">
+                <a href="index.html"><img src="images/company-logo.svg" class="company-logo" alt="Western Taste"></a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Directory</h4>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="giftcard.html">Gift Card</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col info-col">
+                <h4>Location</h4>
+                <address>
+                    <a href="https://www.google.com/maps/place/B.A.J+Restaurant/@3.1979862,101.7124171,21z/data=!4m7!3m6!1s0x31cc380690738eff:0xfd5d4dc5429cf0ee!4b1!8m2!3d3.1980252!4d101.7125528!16s%2Fg%2F11dymnjxqg?entry=ttu">
+                        16, Jalan Genting Kelang,
+                        Taman Shah Nitro,
+                        51000 Setapak, Kuala Lumpur
+                    </a>
+                </address>
+
+                <h4>Contact</h4>
+                <p>Customer Service : <a href="tel:+60333442073">+(603) 33442073</a></p>
+                <p>Email : <a href="mailto:westerntaste@gmail.com">westerntaste@gmail.com</a></p>
+            </div>
+
+            <div class="footer-col last-footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://instagram.com/tarumt.official" target="_blank"><img src="images/icons/instagram-icon.svg"></a>
+                    <a href="https://www.facebook.com/tarumtkl" target="_blank"><img src="images/icons/youtube-icon.svg"></a>
+                    <a href="https://api.whatsapp.com/send?phone=601110843326" target="_blank"><img src="images/icons/whatsapp-icon.svg"></a>
+                </div>
+
+                <h4>Carrer</h4>
+                <ul>
+                    <li><a href="hiring.html">Join Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copy">
+            Copyright &copy; 2024 Western Taste. All rights reserved.
+        </div>
+    </footer>
+    
+    <script src="js/layout.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
