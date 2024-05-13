@@ -108,7 +108,6 @@ input:focus {
 #contact-table {
     font-size: 16px;
     margin: 0 auto;
- 
 }
 
 th, td {
@@ -131,10 +130,5 @@ th, td {
 
     .lfield, .rfield {
         width: 100%;
-    }
-    
-    
-    #contact-table {
-        font-size: 16px;
     }
 }
