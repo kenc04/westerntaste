@@ -38,6 +38,16 @@ function login() {
     }
 }
 
+function showLoginPass() {
+    let password = document.getElementById("loginPass");
+    if (password.type === "password") {
+        password.type = "text";
+    } 
+    else {
+        password.type = "password";
+    }
+}
+
 function signup() {
     const requiredInputs = document.querySelectorAll('input[required]');
     let allInputsFilled = true;
@@ -81,6 +91,19 @@ function signup() {
     }
     else {
         window.alert("Please fill in all required fields to sign up");
+    }
+}
+
+function showSignPass() {
+    let password1 = document.getElementById("signPass1");
+    let password2 = document.getElementById("signPass2");
+    if (password1.type === "password" && password2.type === "password") {
+        password1.type = "text";
+        password2.type = "text";
+    } 
+    else {
+        password1.type = "password";
+        password2.type = "password"
     }
 }
 
