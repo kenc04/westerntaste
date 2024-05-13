@@ -30,6 +30,11 @@
                             <img src="images/icons/password-icon.svg">
                             <input type="password" id="loginPass" placeholder="Password" required>
                         </div>
+
+                        <div>
+                            <input type="checkbox" id="showPass1" onclick="showLoginPass()">
+                            <label for="check">Show Password</label>
+                        </div>
         
                         <input type="submit" class="submitBtn" id="loginBtn" value="L O G I N" onclick="login()">
         
@@ -60,6 +65,11 @@
                         <div class="input-field signup-field">
                             <img src="images/icons/password-icon.svg">
                             <input type="password" id="signPass2" placeholder="Confirm Password">
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="showPass2" onclick="showSignPass()">
+                            <label for="check">Show Password</label>
                         </div>
         
                         <input type="submit" class="submitBtn" id="signupBtn" value="S I G N   U P" onclick="signup()">
