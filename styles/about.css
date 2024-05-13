@@ -8,17 +8,16 @@ main {
 }
 
 .content-container {
-    background: linear-gradient(to top, rgba(210, 210, 210, 0.8), rgb(255, 255, 255));
-    color: rgb(0, 0, 0);
-    height: 70%;
-    padding: 50px 0;
-}
-
-.content-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(3, 3, 3);
+    height: 70%;
+    padding: 50px 0;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 3px rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .content-container:last-of-type {
@@ -31,7 +30,7 @@ main {
 }
 
 .about-content h2 {
-    font-weight: bold;
+    color: rgb(255, 215, 0);
     margin-top: 0;
     font-size: 35px;
 }

@@ -191,9 +191,10 @@ label {
 }
 
 .right-side h2 {
+    color: rgb(255, 215, 0);
+    line-height: 1;
     font-size: 2.5em; 
     margin-bottom: 10px; 
-    line-height: 1;
 }
 
 .right-side h3 {
