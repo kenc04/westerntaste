@@ -57,6 +57,10 @@ main {
 }
 
 @media only screen and (max-width: 640px) {
+    main {
+        padding: 20px 15px;
+    }
+    
     .gift-card-box #gift-cover1 {
         display: none;
     }

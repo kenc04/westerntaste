@@ -201,3 +201,13 @@ select, input[type="text"] {
     background-color: rgb(180, 180, 180);
     transform: scale(1.1);
 }
+
+@media only screen and (max-width: 700px) {
+    main {
+        padding: 20px;
+    }
+
+    .gift-card-row {
+        width: 85%;
+    }
+}

@@ -12,6 +12,7 @@ h2 {
 }
 
 #first-section p {
+    text-align: justify;
     font-size: 18px;
     margin-bottom: 20px;
 }
@@ -100,10 +101,29 @@ input:focus {
     margin-bottom: 10px;
 }
 
+.contact-info {
+    width: 100%
+}
+
+#contact-table {
+    font-size: 16px;
+    margin: 0 auto;
+ 
+}
+
+th, td {
+    padding: 10px;
+    background-color: rgb(128, 128, 128);
+}
+
 @media only screen and (max-width: 700px) {
+    main {
+        padding: 20px 30px;
+    }
+    
     #first-section p {
         font-size: 16px;
-    }
+    }    
 
     .form-row {
         flex-direction: column;
@@ -111,5 +131,10 @@ input:focus {
 
     .lfield, .rfield {
         width: 100%;
+    }
+    
+    
+    #contact-table {
+        font-size: 16px;
     }
 }
